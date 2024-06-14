@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacion.Views.MenuView"
+             Shell.NavBarIsVisible="False"
+             Title="MenuView">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#1130DC" Offset="0.0" />
+            <GradientStop Color="#00FADD" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,50"  
+            Spacing="10"
+            VerticalOptions="StartAndExpand">
+            <Button
+            x:Name="SalirButton"
+            Text="salir"
+            TextColor="White"
+            BackgroundColor="#6110D3"
+            CornerRadius="25"
+            HeightRequest="50"
+            WidthRequest="105"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,-35,265,0" 
+            Clicked="SalirButton_Clicked" />
+            
+            <Image
+             Source="logoites_2.png"
+             HeightRequest="130"
+             Aspect="AspectFit"
+             Margin="0,0,0,10" 
+             SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Label
+             Text="ITES"
+             TextColor="White"
+             FontSize="24"
+             HorizontalOptions="Center"
+             Margin="-12" />
+            <Label
+             Text="Instituto Tecnologico de Educacion Superior"
+             TextColor="White"
+             FontSize="18"
+             HorizontalOptions="Center"
+             Margin="4" />
+            <Label 
+             Text="¡Bienvenidos a ITES!"
+             TextColor="White"
+             FontSize="25"
+             HorizontalOptions="Center"
+             Margin="65" />
+            <Label 
+            Text="Te invitamos a ser parte del Instituto Tecnologico de Educacion Superior (ITES), y que puedas conocer nuestras Ofertas Academicas Gratuitas de nivel terciario (superior no universitario), con validez nacional y amplia salida laboral."
+            TextColor="White"
+            FontSize="19"
+            WidthRequest="410"
+            Margin="-50" 
+            HorizontalTextAlignment="Center" 
+            HorizontalOptions="Center" />
+            <Label 
+               Text="¡Donde tu futuro te espera!"
+               TextColor="White"
+               FontSize="20"
+               HorizontalOptions="Center"
+               Margin="65" />
+            <Button
+            x:Name="acercadebutton"
+            Text="Acerca de"
+            TextColor="White"
+            BackgroundColor="#6110D3"
+            CornerRadius="25"
+            HeightRequest="50"
+            WidthRequest="105"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,90,0,0" 
+            Clicked="acercadebutton_Clicked" />
+
+           
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

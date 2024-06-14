@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacion.Views.AcercadeView"
+             Background="#3DA4DC"
+             Title="AcercadeView">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,50"  
+        Spacing="10"
+        VerticalOptions="StartAndExpand">
+        
+        <Button
+        x:Name="SalirButton1"
+        Text="Volver"
+        TextColor="White"
+        BackgroundColor="#6110D3"
+        CornerRadius="25"
+        HeightRequest="50"
+        WidthRequest="105"
+        HorizontalOptions="End"
+        VerticalOptions="End"
+        Margin="0,-35,265,0" 
+        Clicked="SalirButton1_Clicked" />
+
+        <Frame
+             BackgroundColor="Transparent"
+             BorderColor="White"
+             CornerRadius="20"
+             Padding="10,5"
+             HorizontalOptions="Center"
+             Margin="0,30,0,5">
+          <Label
+             Text="Lautaro Tomas Schab"
+             TextColor="White"
+             FontSize="22"
+             HorizontalOptions="Center" />
+         </Frame>
+         <Image
+         Source="foto.png"
+         HeightRequest="280"
+         Aspect="AspectFit"
+         Margin="0,0,0,0" 
+         SemanticProperties.Description="dot net bot in a race car number eight" />
+
+         <Label
+            Text="Desarrollador de Software"
+            TextColor="White"
+            Background="#1143EF"
+            FontSize="20"
+            HorizontalOptions="Center" />
+            
+            <Button
+            x:Name="contacobutton"
+            Text="Contacto"
+            TextColor="White"
+            BackgroundColor="#6110D3"
+            CornerRadius="25"
+            HeightRequest="50"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,50,100,0" 
+            Clicked="contacobutton_Clicked" />
+
+            <Button
+            x:Name="EnviarCorreobutton"
+            Text="Enviar Correo"
+            TextColor="White"
+            BackgroundColor="#6110D3"
+            CornerRadius="25"
+            HeightRequest="50"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,0,100,0" 
+            Clicked="EnviarCorreobutton_Clicked" />
+
+        </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>

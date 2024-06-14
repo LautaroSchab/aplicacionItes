@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aplicacion.Views.LoginView"
+             Shell.NavBarIsVisible="False"
+             Title="LoginView">
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#1130DC" Offset="0.0" />
+            <GradientStop Color="#00FADD" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,50"  
+        Spacing="25"
+        VerticalOptions="StartAndExpand">
+            <Image
+            Source="logoites_2.png"
+            HeightRequest="160"
+            Aspect="AspectFit"
+            Margin="0,170,0,0" 
+            SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Frame Style="{StaticResource RoundedFrameStyle}">
+                <Entry
+                x:Name="usernameEntry"
+                Style="{StaticResource EntryStyleInsideFrame}"
+                Placeholder="Usuario" />
+            </Frame>
+
+            <Frame Style="{StaticResource RoundedFrameStyle}">
+                <Entry
+                x:Name="passwordEntry"
+                Style="{StaticResource EntryStyleInsideFrame}"
+                Placeholder="Contraseña"
+                IsPassword="True" />
+            </Frame>
+
+            <Button
+            x:Name="loginButton"
+            Text="Iniciar Sesión"
+            TextColor="White"
+            BackgroundColor="#6110D3"
+            CornerRadius="25"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="End"
+            Margin="0,10"
+            Clicked="OnLoginButtonClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
